@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
@@ -10,9 +11,11 @@ body {
     background-size: cover;
     min-width: 100vw;
     min-height: 100vh;
+     
 
 
 }
+ 
 
 .content {
     width: 90%;
@@ -28,6 +31,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     box-sizing: border-box;
+    
 }
 
 
@@ -51,6 +55,7 @@ input,select{
     border-bottom: 2px  solid;
     font-family: 'Poppins', sans-serif;
     color: #000;
+    
 }
 
 .form-group>button{
@@ -68,4 +73,21 @@ input,select{
  position: absolute;
  left: 58%;
  margin-top: 3px;
+}
+
+textarea:focus{   /* Eğer outline none yapmasaydım textarea ya tıkladığımda input'a aşağıda yazdım ona tıkladığımda kenarlar çizgi olacaktı  */
+    outline:none;
+}
+input:focus{
+    outline: none;  
+}
+.form-group>textarea{
+
+     
+    width: 100%;
+    height:100px;
+    border:none;
+    border-bottom: 1px solid;
+    font-family: 'Poppins', sans-serif;
+
 }
