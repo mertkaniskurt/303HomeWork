@@ -1,93 +1,118 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    background-image: url(backgroundImage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 100vw;
-    min-height: 100vh;
-     
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Say Hello!</h1>
+        <div class="main">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter Your Name">
+
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" placeholder="Enter your email address">
+
+            </div>
+
+            <div class="form-group ">
+                <label>Needed Services</label>
+                <select>
+                    <option value="0">Choose Services</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
 
 
-}
- 
-
-.content {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    padding: 21px;
-    border-radius: 30px;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 50%;
-    transform: translateY(-50%);
-    box-sizing: border-box;
-    
-}
 
 
-.content>h1 {
-    color: black;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
+                </select>
 
-.form-group{
+            </div>
+            <div class="form-group">
+                <label>Budget</label>
+                <select>
+                    <option value="0">Choose Budget</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
 
-margin-top: 15px;
 
-}
 
-input,select{
-    width: 100% ;
-    height: 30px;
-    text-align:left ;
-    border:none ;
-    border-bottom: 2px  solid;
-    font-family: 'Poppins', sans-serif;
-    color: #000;
-    
-}
 
-.form-group>button{
+                </select>
 
-    width: 100%;
-    border-radius: 30px;
-    background: linear-gradient(45deg, #d719f4 0%, #21bfe6 40%);
-    border:none;
-    color: white;
-    padding: 8px ;
+            </div>
 
-}
+            <div class="form-group">
+                <label>Message</label>
 
-.form-group>i{
- position: absolute;
- left: 58%;
- margin-top: 3px;
-}
+            </div>
 
-textarea:focus{   /* Eğer outline none yapmasaydım textarea ya tıkladığımda input'a aşağıda yazdım ona tıkladığımda kenarlar çizgi olacaktı  */
-    outline:none;
-}
-input:focus{
-    outline: none;  
-}
-.form-group>textarea{
 
-     
-    width: 100%;
-    height:100px;
-    border:none;
-    border-bottom: 1px solid;
-    font-family: 'Poppins', sans-serif;
 
-}
+
+
+
+        </div>
+
+        <div class="form-group">
+            <textarea rows="4" cols="53" placeholder="Your message is"></textarea>
+
+
+
+        </div>
+
+        <div class="form-group">
+
+            <button id="btn">
+                <span>Submit</span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+       
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        let button = document.querySelector('#btn');
+        button.onclick = function () {
+            alert('butona tıklandı');
+
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
